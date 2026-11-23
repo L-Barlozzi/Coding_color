@@ -4,18 +4,24 @@
 <head>
     <meta charset="utf-8">
     <title>Coding&Color - 4BI</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+    <!-- Intestazione con saluto e data odierna -->
     <div id="header">
         <h1 id="saluto">Oggi è un bel giorno!</h1>
+        <p id="dataOggi"></p>
     </div>
+
+    <!-- Titolo dell'applicazione -->
     <div id="title">
         <h1>CODICI e COLORI</h1>
     </div>
+
+    <!-- Area inserimento dati utente e pulsanti -->
     <div id="input">
-        <label for="inNumber">Inserisci un numero: </label>
+        <label for="inNumber">Inserisci un numero (0-255): </label>
         <input id="inNumber" placeholder="inserisci un numero">
         <br>
         <label for="inText">Inserisci un testo: </label>
@@ -24,12 +30,24 @@
         <button type="button" id="btnElabora" onclick="elabora()">Elabora</button>
         <button type="button" id="btnCancella" onclick="reset()">Cancella</button>
     </div>
+
+    <!-- Area output canali RGB, anteprima colore e testo colorato -->
     <div id="output">
+        <div id="canali">
+            <span id="valR">R: --</span>
+            <span id="valG">G: --</span>
+            <span id="valB">B: --</span>
+        </div>
+        <div id="anteprimaColore"></div>
         <p id="outText">Output</p>
+        <p id="codiceRgb">rgb(--, --, --)</p>
     </div>
+
+    <!-- Area dedicata ai messaggi di errore -->
     <div>
-        <p id="error">Errori</p>
+        <p id="error"></p>
     </div>
+
     <script src="script.js"></script>
 </body>
 

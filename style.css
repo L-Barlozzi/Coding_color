@@ -1,0 +1,89 @@
+/* Stile base della pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    text-align: center;
+    margin: 30px;
+}
+
+/* Intestazione e data */
+#saluto {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+#dataOggi {
+    color: #000000;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+#title h1 {
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Contenitore input e pulsanti */
+#input,
+#output {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 420px;
+    margin: 15px auto;
+}
+
+#input input {
+    padding: 6px;
+    margin: 6px 0;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+}
+
+#input button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#btnElabora {
+    background-color: #2e86de;
+}
+
+#btnCancella {
+    background-color: #cf3d64;
+}
+
+/* Riquadro anteprima colore */
+#anteprimaColore {
+    width: 100%;
+    height: 45px;
+    background-color: #dddddd;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+
+/* Testo di output, codice RGB ed errori */
+#outText {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+#codiceRgb {
+    font-size: 14px;
+    color: #555555;
+    margin: 0;
+}
+
+#error {
+    color: #e74c3c;
+    font-weight: bold;
+    min-height: 20px;
+}
