@@ -3,10 +3,7 @@ console.log("Avvio applicazione Coding&Color");
 
 let oggi = new Date();
 let giorniSettimana = ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"];
-let mesiAnno = [
-    "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
-    "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"
-];
+let mesiAnno = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
 
 let testoData = giorniSettimana[oggi.getDay()] + " " + oggi.getDate() + " " + mesiAnno[oggi.getMonth()] + " " + oggi.getFullYear();
 console.log("Data corrente: " + testoData);
@@ -51,10 +48,6 @@ function elabora() {
     if (rgbValori.length >= 2) document.getElementById("valG").innerText = "G: " + rgbValori[1];
     if (rgbValori.length === 3) document.getElementById("valB").innerText = "B: " + rgbValori[2];
 
-    let rTesto = rgbValori[0] !== undefined ? rgbValori[0] : "--";
-    let gTesto = rgbValori[1] !== undefined ? rgbValori[1] : "--";
-    let bTesto = rgbValori[2] !== undefined ? rgbValori[2] : "--";
-    document.getElementById("codiceRgb").innerText = "rgb(" + rTesto + ", " + gTesto + ", " + bTesto + ")";
     pOutput.innerText = "Valore aggiunto: " + numero;
 
     /* Mostra il colore */
@@ -86,7 +79,6 @@ function reset() {
     document.getElementById("anteprimaColore").style.backgroundColor = "#dddddd";
     document.getElementById("outText").innerText = "Output";
     document.getElementById("outText").style.color = "#222222";
-    document.getElementById("codiceRgb").innerText = "rgb(--, --, --)";
 
     rgbValori = [];
 }
